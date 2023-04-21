@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { MiRefuioMainComponent } from './components/mi-refugio-main/mi-refuio-main.component';
+import { MiRefuioMainComponent } from './refugio/mi-refugio-main/mi-refuio-main.component';
 
 @NgModule({
   declarations: [
