@@ -3,7 +3,7 @@ import { PetsService } from '../services/pets.service';
 import { Pets } from '../interfaces/pets.interface';
 
 @Component({
-  selector: 'app-mi-refuio-main',
+  selector: 'app-mi-refugio-main',
   templateUrl: './mi-refuio-main.component.html',
   styleUrls: ['./mi-refuio-main.component.css']
 })
@@ -19,7 +19,6 @@ export class MiRefuioMainComponent {
   onNewPet(pets: Pets)
   {
     this.petsService.addPets(pets);
-    console.log(pets.nombre);
   }
 
 

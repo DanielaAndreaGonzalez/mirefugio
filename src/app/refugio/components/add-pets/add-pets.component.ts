@@ -22,7 +22,7 @@ public pet: Pets =
 }
 emitPets():void{
 
-  console.log(this.pet.nombre);
+ console.log(this.pet.nombre);
 
   if(this.pet.nombre.length === 0) return;
   this.onNewPet.emit(this.pet),

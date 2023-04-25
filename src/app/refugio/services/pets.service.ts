@@ -49,7 +49,7 @@ export class PetsService {
    {
     const newPets: Pets = {id: uuid(),...pets};
     this.pets.push(newPets);
-    console.log(pets.nombre);
+   
    }
 
 }
