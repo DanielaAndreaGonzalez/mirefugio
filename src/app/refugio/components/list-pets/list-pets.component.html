@@ -1,3 +1,4 @@
+<br>
 <h2>Listado de mascotas</h2>
 <div>
         <table class="table">
@@ -6,6 +7,7 @@
                 <th scope="col">Id</th>
                 <th scope="col">Nombre</th>
                 <th scope="col">Raza</th>
+                <th scope="col">Opciones</th>
               </tr>
             </thead>
             <tbody>
@@ -13,6 +15,11 @@
                 <th scope="row">{{i}}</th>
                 <td>{{pets.nombre}}</td>
                 <td>{{pets.raza}}</td>
+                <td>
+                  <button type="button" class="btn btn-success">Modificar</button>
+                  <button type="button" class="btn btn-danger">Eliminar</button>
+                  <button type="button" class="btn btn-info">Ver</button>
+                </td>
               </tr>
             </tbody>
           </table>
