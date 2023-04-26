@@ -1,26 +1,27 @@
-<br>
-<h2>Listado de mascotas</h2>
-<div>
-        <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">Id</th>
-                <th scope="col">Nombre</th>
-                <th scope="col">Raza</th>
-                <th scope="col">Opciones</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr *ngFor="let pets of petsList; let i = index;">
-                <th scope="row">{{i}}</th>
-                <td>{{pets.nombre}}</td>
-                <td>{{pets.raza}}</td>
-                <td>
-                  <button type="button" class="btn btn-success">Modificar</button>
-                  <button type="button" class="btn btn-danger">Eliminar</button>
-                  <button type="button" class="btn btn-info">Ver</button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+
+
+<div class="row border border-info m-3">
+  <h3 class="text-center">Listado de mascotas</h3>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Raza</th>
+          <th scope="col">Opciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let pets of petsList; let i = index;">
+          <th scope="row">{{i}}</th>
+          <td>{{pets.nombre}}</td>
+          <td>{{pets.raza}}</td>
+          <td>
+            <button type="button" class="btn btn-success me-2">Modificar</button>
+            <button type="button" class="btn btn-danger me-2">Eliminar</button>
+            <button type="button" class="btn btn-info me-2">Ver</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
 </div>

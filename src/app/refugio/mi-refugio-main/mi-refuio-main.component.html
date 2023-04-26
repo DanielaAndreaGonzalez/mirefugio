@@ -1,8 +1,17 @@
+<!--Documentacion Bootstrap utilizada-->
+<!-- Container - https://getbootstrap.com/docs/4.0/layout/overview/-->
+<!-- Colores - https://getbootstrap.com/docs/4.0/utilities/colors/-->
+<!-- Bordes - https://getbootstrap.com/docs/4.0/utilities/borders/-->
 
 
-<div class="row">
-    <div class="col-6">
-        <app-add-pets (onNewPet)="onNewPet($event)"></app-add-pets>
-        <app-list-pets [petsList] = "pets"></app-list-pets>
-    </div>
+<div class="container border border-dark mt-5">
+    Container
+   <div class="row m-4 border border-dark">
+        row
+        <div class="col-6 m-3 border border-dark">
+            col
+            <app-add-pets (onNewPet)="onNewPet($event)"></app-add-pets>
+            <app-list-pets [petsList] = "pets"></app-list-pets>
+        </div>
+    </div> 
 </div>
