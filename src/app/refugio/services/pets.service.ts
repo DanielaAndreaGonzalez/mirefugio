@@ -49,7 +49,10 @@ export class PetsService {
    {
     const newPets: Pets = {id: uuid(),...pets};
     this.pets.push(newPets);
-   
+   }
+
+   deletePetById(id:String):void{
+    this.pets = this.pets.filter(pets => pets.id != id);
    }
 
 }

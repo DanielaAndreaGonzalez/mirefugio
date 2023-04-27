@@ -3,6 +3,8 @@
 <div class="row">
     <div class="col-6">
         <app-add-pets (onNewPet)="onNewPet($event)"></app-add-pets>
-        <app-list-pets [petsList] = "pets"></app-list-pets>
+        
+        <app-list-pets [petsList] = "pets"
+        (onIndexDelete)="onDeletePet($event)" ></app-list-pets>
     </div>
 </div>

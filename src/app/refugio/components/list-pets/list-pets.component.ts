@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Pets } from '../../interfaces/pets.interface';
 
 @Component({
@@ -8,8 +8,17 @@ import { Pets } from '../../interfaces/pets.interface';
 })
 export class ListPetsComponent {
 
+  @Output()
+  public onIndexDelete: EventEmitter<String> = new EventEmitter();
+
   @Input()
   public petsList:Pets[] = [];
 
+
+  onDeletePet(id?:String):void{
+
+    if(!id) return;
+    this.onIndexDelete.emit(id);  
+  }
 
 }
