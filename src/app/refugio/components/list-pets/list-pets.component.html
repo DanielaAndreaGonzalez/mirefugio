@@ -17,7 +17,7 @@
                 <td>{{pets.raza}}</td>
                 <td>
                   <button type="button" class="btn btn-success">Modificar</button>
-                  <button type="button" class="btn btn-danger">Eliminar</button>
+                  <button type="button" (click)="onDeletePet(pets.id)"  class="btn btn-danger">Eliminar</button>
                   <button type="button" class="btn btn-info">Ver</button>
                 </td>
               </tr>

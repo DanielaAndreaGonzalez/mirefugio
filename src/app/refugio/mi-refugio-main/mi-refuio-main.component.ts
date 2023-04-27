@@ -21,5 +21,9 @@ export class MiRefuioMainComponent {
     this.petsService.addPets(pets);
   }
 
+  onDeletePet(id:String):void
+  {
+    this.petsService.deletePetById(id);
+  }
 
 }
